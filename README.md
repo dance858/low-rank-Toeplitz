@@ -4,7 +4,7 @@ This repository hosts an implementation of a primal logarithmic barrier method f
 $$
 \begin{array}{r}
 \text{minimize} & \text{log det } (T + \sigma^2 I) + \textbf{Tr}((T + \sigma^2 I)^{-1} S) + \lambda \| T \|_{*} \\
-\text{subject to} & T \text{ being Toeplitz}, \: T \succeq 0,  \\
+\text{subject to} & T \text{ being Toeplitz}, \h T \succeq 0,  \\
 &  \sigma^2_{\text{ub}} \geq \sigma^2 \geq \sigma^2_{\text{lb}}
 \end{array}
 $$
@@ -13,7 +13,7 @@ $$
 $$
 \begin{array}{r}
 \text{minimize} & \text{log det } (T + \sigma^2 I) + \textbf{Tr}((T + \sigma^2 I)^{-1} S) + \lambda \| T \|_{*} \\
-\text{subject to} & T \text{ being Toeplitz}, \: T \succeq 0, \hspace{1.2cm}
+\text{subject to} & T \text{ being Toeplitz}, \hspace{0.4cm} T \succeq 0, \hspace{2cm}
 \end{array}
 $$
 
