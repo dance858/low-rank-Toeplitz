@@ -13,7 +13,7 @@ $$
 $$
 \begin{array}{r}
 \text{minimize} & \text{log det } (T + \sigma^2 I) + \textbf{Tr}((T + \sigma^2 I)^{-1} S) + \lambda \| T \|_{*} \\
-\text{subject to} & T \text{ being Toeplitz}, \hspace{0.4cm} T \succeq 0, \hspace{0.4cm} \sigma^2_1 , \hspace{2cm}
+\text{subject to} & T \text{ being Toeplitz}, \hspace{0.4cm} T \succeq 0, \hspace{0.4cm} \sigma^2_{1} , \hspace{2cm}
 \end{array}
 $$
 
