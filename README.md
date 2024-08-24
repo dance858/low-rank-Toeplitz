@@ -3,13 +3,13 @@ This repository hosts an implementation of a primal logarithmic barrier method f
 
 $$
 \begin{array}{r}
-\text{minimize} & \text{log det } (T + \sigma^2 I) + \textbf{Tr}((T + \sigma^2 I)^{-1} S) + \lambda \| T \|_{*} \\
-\text{subject to} & T \text{ being Toeplitz}, \hspace{0.4cm} T \succeq 0, \hspace{0.4cm} \sigma^2_1 \geq \sigma^2 \geq \sigma^2_0 , \hspace{1cm}
+\text{minimize} & \text{log det } (T + \sigma^2 I) + \textbf{Tr}((T + \sigma^2 I)^{-1} S) + \lambda || T ||_{*} \\
+\text{subject to} & T \text{ being Toeplitz}, \hspace{0.4cm} T \succeq 0, \hspace{0.4cm} \sigma^2_1 \geq \sigma^2 \geq \sigma^2_0 , \hspace{0.8cm}
 \end{array}
 $$
 
 with decision variables
-$T \in \mathbf{H}^{n+1}$ and $\sigma^2 \in \reals$,
+$T \in \mathbf{H}^{n+1}$ and $\sigma^2 \in \mathbf{R}$,
 and problem data
 $S \in \mathbf{H}^{n+1}$ representing the sample covariance matrix and noise bounds $\sigma^2_{\text{1}} > \sigma^2_{\text{0}}$.
 (Here $\mathbf{H}^{n+1}$ is the space of Hermitian matrices of dimension $n + 1$.)
