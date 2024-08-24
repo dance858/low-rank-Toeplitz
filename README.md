@@ -9,6 +9,14 @@ $$
 \end{array}
 $$
 
+
+$$
+\begin{array}{r}
+\text{minimize} & \textbf{log det } R + \textbf{Tr}(R^{-1} S) \\
+\text{subject to} & R \text{ being Toeplitz} \hspace{1.2cm}
+\end{array}
+$$
+
 with decision variables
 $T \in \mathbf{H}^{n+1}$ and $\sigma^2 \in \reals$,
 and problem data
